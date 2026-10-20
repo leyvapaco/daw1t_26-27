@@ -2,7 +2,7 @@ package ud1.tarea5b;
 
 import java.util.Scanner;
 
-public class Ej5_3 {
+public class Ej5b_3 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 

@@ -13,25 +13,21 @@ public class Ej5b_1 {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Introduce el día de la semana");
 		String dia;
-		String asignatura="";
 		
 		dia=sc.next();
 		
+		//Las cadenas (Strings) se compararan con el método .equals() 
 		
-		switch(dia){
-			case "Lunes":
-				asignatura="Programación";
-			break;
-			case "Martes":
-				asignatura="Digitalización";		
-			break;
-			default:
-				asignatura="Ninguna";		
-			
-		}
+		//Con el método toLowerCase() convertimos el String leído por consola en minúsculas
 		
-		System.out.println("La asignatura es: "+asignatura);
-
+		if (dia.toLowerCase().equals("lunes"))
+				System.out.println("Programación");
+		
+		if (dia.equals("martes"))
+			System.out.println("Bases de datos");
+		
+		// etc
+				
 	}
 
 }
