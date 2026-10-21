@@ -2,7 +2,7 @@ package ud1.ejemplos;
 
 import java.util.Scanner;
 
-public class PruebaWhile {
+public class EjemploWhile {
 	public static void main(String[] args) {
 		
 		int suma=0;
@@ -12,7 +12,7 @@ public class PruebaWhile {
 		Scanner sc=new Scanner(System.in);
 			
 		do {		
-			System.out.printf("Introduce números y calcularé la suma. Finaliza si introduces 0 o la suma total supera %d",TOPE);
+			System.out.printf("Introduce número. Finaliza con un 0 ó si la suma total supera %d: ",TOPE);
 			
 			numLeido=sc.nextInt();
 			
