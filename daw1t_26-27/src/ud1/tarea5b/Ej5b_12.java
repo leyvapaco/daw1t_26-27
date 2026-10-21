@@ -21,14 +21,14 @@ public class Ej5b_12 {
 
 	        if (a <= b && a <= c) {
 	            menor = a;
-	            if (b <= c) {
+	            if (b <= c) {  //Comparamos los otros dos (b y c)
 	                medio = b;
 	                mayor = c;
 	            }else {
 	                medio = c;
 	                mayor = b;
 	            }
-	        }else if (b <= a && b <= c) {
+	        } else if (b <= a && b <= c) {
 	            menor = b;
 	            if (a <= c) {
 	                medio = a;
@@ -37,7 +37,7 @@ public class Ej5b_12 {
 	                medio = c;
 	                mayor = a;
 	            }
-	        } else {
+	        } else {  //Llegados a este punto sabemos que c es el menor
 	            menor = c;
 	            if (a <= b) {
 	                medio = a;
