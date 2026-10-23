@@ -42,8 +42,21 @@ public class Ej5b_14parcial {
                 break;
 
             case 4:
-
-
+            	
+            case 5:  //Alternativa a 1, manejando filas y columnas
+            	
+            	for (int i = 1; i <= 5; i++) {
+            	    for (int j = 1; j <= 9; j++) {
+            	        if (j >= 6 - i && j <= 4 + i) {
+            	            System.out.print(caracter);
+            	        } else {
+            	            System.out.print("-");
+            	        }
+            	    }
+            	    System.out.println();
+            	}
+            
+            break;
             default:
                 System.out.println("Opcion no valida.");
         }
