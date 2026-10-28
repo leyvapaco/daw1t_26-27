@@ -10,11 +10,11 @@ public class Ej8b_10b {
     System.out.println("Escribe la altura de la barra");
     int n = sc.nextInt();
     
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) { //Para todas las filas excepto la última
     	
       for (int j = 1; j <= n; j++) {
-    	// Comprobamos si estamos en la primera o última columna
-        if ((j == 1) || (j == n)) {
+    	
+        if ((j == 1) || (j == n)) {// Comprobamos si estamos en la primera o última columna para pintar un *
           System.out.print("*");
         } else {
           System.out.printf(" ");
@@ -25,7 +25,7 @@ public class Ej8b_10b {
     
     // Pintamos última fila
     for (int i = 1; i <= n; i++) {
-      if ((i == 1) || (i == n)) {
+      if ((i == 1) || (i == n)) { // Comprobamos si es el primer o ultimo carácter de la fila, para puntar un espacio
         System.out.printf(" ");
       } else {
         System.out.printf("*");
