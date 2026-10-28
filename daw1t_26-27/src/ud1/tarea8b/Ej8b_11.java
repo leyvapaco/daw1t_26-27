@@ -2,6 +2,8 @@ package ud1.tarea8b;
 
 import java.util.Scanner;
 
+//Depurar para entender bien este ejercicio
+
 public class Ej8b_11 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,8 +14,8 @@ public class Ej8b_11 {
             System.out.println("Error: la altura debe ser un número impar mayor o igual a 3.");
         } else {
             
-        	for (int i = 1; i <= altura; i++) {
-                for (int j = 1; j <= altura; j++) {
+        	for (int i = 1; i <= altura; i++) { //Filas
+                for (int j = 1; j <= altura; j++) { //Columnas
                     if (j == i || j == (altura-i+1)) {
                         System.out.print("*");
                     } else {
