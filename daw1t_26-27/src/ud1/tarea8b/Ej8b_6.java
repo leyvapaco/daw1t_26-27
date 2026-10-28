@@ -18,20 +18,20 @@ public class Ej8b_6 {
 	  
     Scanner sc = new Scanner(System.in);
     System.out.println("Introduce altura:");
-    int n = sc.nextInt();
+    int altura = sc.nextInt();
     
     System.out.println("Introduce carácter de relleno:");
     String c = sc.next();
     
-    for (int i = 1; i <= n; i++) {  
+    for (int i = 1; i <= altura; i++) {  
       //Pinto los espacios en blanco antes del carácter O
-      for (int j = 1; j <= n-i; j++) { 
+      for (int j = 1; j <= altura-i; j++) { 
             System.out.print("-");
           }  	
       //Pinto el carácter O, o los espacios en blanco interiores
       for (int k = 1; k <= (i*2)-1; k++) {
     	  // si estamos en los extremos o en la última fila
-    	  if ((k==1) || (k==(i*2)-1) || (i==n))  
+    	  if ((k==1) || (k==(i*2)-1) || (i==altura))  
     		  System.out.print(c);
     	  else 
     		  System.out.print("+");
