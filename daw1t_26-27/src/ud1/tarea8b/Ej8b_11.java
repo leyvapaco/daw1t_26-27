@@ -14,8 +14,8 @@ public class Ej8b_11 {
             System.out.println("Error: la altura debe ser un número impar mayor o igual a 3.");
         } else {
             
-        	for (int i = 1; i <= altura; i++) { //Filas
-                for (int j = 1; j <= altura; j++) { //Columnas
+        	for (int i = 1; i <= altura; i++) { //Nº de filas
+                for (int j = 1; j <= altura; j++) { //Pinto cada fila
                     if (j == i || j == (altura-i+1)) {
                         System.out.print("*");
                     } else {

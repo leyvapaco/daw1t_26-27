@@ -2,6 +2,7 @@ package ud1.tarea8b;
 
 import java.util.Scanner;
 
+
 /*
 Realiza un programa que pinte una pirámide por pantalla. La altura se debe pedir por teclado. 
 El carácter con el que se pinta la pirámide también se debe pedir por teclado.
@@ -20,11 +21,12 @@ public class Ej8b_5 {
         sc.nextLine();
 
         // Solicitar carácter
-        System.out.print("Introduce el carácter para pintar la pirámide: ");
+        System.out.println("Introduce el carácter para pintar la pirámide: ");
         char caracter = sc.nextLine().charAt(0);
 
         // Pintar la pirámide
         for (int i = 1; i <= altura; i++) {
+        	System.out.print("i="+i+" ");
             // Espacios en blanco
             for (int j = 1; j <= altura - i; j++) {
                 System.out.print(".");
