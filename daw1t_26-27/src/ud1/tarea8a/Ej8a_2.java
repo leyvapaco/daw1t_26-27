@@ -6,34 +6,34 @@ public class Ej8a_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int contadorAlumnos = 0;
-        int edad;
-        int mayoresEdad = 0;
+        int ctdAlumnos = 0;
+        int edadAlumno;
+        int ctdMayoresEdad = 0;
         int sumaEdades = 0;
 
         System.out.println("Introduce las edades de los alumnos (edad negativa para terminar):");
 
         do  {
             System.out.print("Edad del alumno : ");
-            edad=scanner.nextInt();
+            edadAlumno=scanner.nextInt();
   
-            if (edad>0) {          
-            	if (edad >= 18) 
-            		mayoresEdad++;
+            if (edadAlumno>0) {          
+            	if (edadAlumno >= 18) 
+            		ctdMayoresEdad++;
             	
-                sumaEdades += edad;
-                contadorAlumnos++;
+                sumaEdades += edadAlumno;
+                ctdAlumnos++;
             }
-        }while (edad>0);
+        }while (edadAlumno>0);
 
-        if (contadorAlumnos > 0) {
-            float media = (float) sumaEdades / contadorAlumnos;
+        if (ctdAlumnos > 0) {
+            float mediaEdad = (float) sumaEdades / ctdAlumnos;
 
             System.out.println("\n--- Estadísticas ---");
-            System.out.println("Total de alumnos: " + contadorAlumnos);
+            System.out.println("Total de alumnos: " + ctdAlumnos);
             System.out.println("Suma de edades: " + sumaEdades);
-            System.out.printf("Media de edad: %.2f\n", media);
-            System.out.println("Alumnos mayores de edad: " + mayoresEdad);
+            System.out.printf("Media de edad: %.2f\n", mediaEdad);
+            System.out.println("Alumnos mayores de edad: " + ctdMayoresEdad);
         } else {
             System.out.println("No se introdujeron edades válidas.");
         }
