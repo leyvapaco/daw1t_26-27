@@ -55,7 +55,7 @@ public class Ej5b_25 {
 
         if (continuar) {
         float total = precioComida + precioBebida;
-        System.out.printf("El precio total del desayuno es: "+ total +" euros");
+        System.out.printf("El precio total del desayuno es: %.2f euros", total);
         }
     }
 }
