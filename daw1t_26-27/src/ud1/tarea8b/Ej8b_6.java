@@ -15,15 +15,15 @@ public class Ej8b_6 {
     int n = sc.nextInt();
     
     System.out.println("Introduce carácter de relleno:");
-    String r = sc.next();
+    String c = sc.next();
     
     for (int i = 1; i <= n; i++) {  
       for (int j = 1; j <= n-i; j++) { 
             System.out.print(" ");
           }  	
       for (int k = 1; k <= (i*2)-1; k++) {
-    	  if ((k==1) || (k==(i*2)-1) || (i==n))  // extremos o última fila
-    		  System.out.print(r);
+    	  if ((k==1) || (k==(i*2)-1) || (i==n))  // si estamos en los extremos o en la última fila
+    		  System.out.print(c);
     	  else 
     		  System.out.print(" ");
       }
