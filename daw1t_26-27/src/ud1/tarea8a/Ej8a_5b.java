@@ -25,8 +25,6 @@ public class Ej8a_5b {
 		
 		do {
 			System.out.printf("Introduce un número dentro del rango %d - %d %n",min,max);
-			//Equivalente:
-			//System.out.println("Introduce un número dentro del rango "+min+"-"+max);  
 			num=sc.nextInt();
 		} while (num<min || num>max);
 		
