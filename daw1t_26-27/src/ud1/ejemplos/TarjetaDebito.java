@@ -10,18 +10,18 @@ public class TarjetaDebito {
 		final int pinSecreto=1234;
 		int pinIntroducido;
 		int opc;
-		int intentos=3;
+		int intentosRestantes=3;
 		boolean autenticado=false;
 				
 		Scanner cajero = new Scanner(System.in);
 		
 		do {
-			System.out.printf("Introduzca pin. Intentos restantes: %d %n",intentos);
+			System.out.printf("Introduzca pin. Intentos restantes: %d %n",intentosRestantes);
 			pinIntroducido=cajero.nextInt();
 			if(pinIntroducido==pinSecreto)
 				autenticado=true;
-			intentos--;
-		}while (!autenticado && intentos>0);
+			intentosRestantes--;
+		}while (!autenticado && intentosRestantes>0);
 			
 		if (autenticado) {		
 			System.out.println("1: Ingresar efectivo:");	
