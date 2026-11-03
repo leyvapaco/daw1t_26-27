@@ -12,7 +12,7 @@ public class Ej8a_8_No_recursivo {
         long factorial = 1;
 
         for (int i = n; i >= 1; i--) {
-            factorial *= i;
+            factorial *= i;  // es lo mismo que factorial=factorial*i;
         }
 
         System.out.println("Factorial de " + n + " = " + factorial);
