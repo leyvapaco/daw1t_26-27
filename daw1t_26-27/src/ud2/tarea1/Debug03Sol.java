@@ -26,16 +26,20 @@ public class Debug03Sol {
     //Primo: Un número natural mayor que 1 que tiene exactamente dos divisores positivos: 1 y él mismo.
     public static boolean esPrimo(int num) {
 
-        if (num < 2) { //El 1 no es primo
+        if (num < 2) {
             return false;
         }
 
-        for (int i = 2; i < num; i++) {
+        boolean primo = true;
+        int i = 2;
+
+        while (i < num && primo) {
             if (num % i == 0) {
-                return false; //En cuanto encuentre un divisor que no sea 1 o él mismo, ya no es primo
+                primo = false;
             }
+            i++;
         }
 
-        return true;
+        return primo;
     }
 }
