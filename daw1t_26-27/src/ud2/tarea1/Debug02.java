@@ -13,8 +13,8 @@ public static void main(String[] args) {
 	System.out.println("Mostrando los 10 posteriores "+num);
 	i=num;
 	
-	while(i>num+10) {
-		System.out.println("Número posterior "+i);
+	while(i<num+10) {
+		System.out.println("Número posterior "+(i+1));
 		i++;
 	}
 	
