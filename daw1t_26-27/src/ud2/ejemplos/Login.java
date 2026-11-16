@@ -21,7 +21,7 @@ public class Login {
 
     public static void main(String[] args) {
         try {
-            iniciarSesion("admin", "0000");
+            iniciarSesion("admin", "1234");
         } catch (CredencialesIncorrectasException e) {
             System.out.println(e.getMessage());
         }
