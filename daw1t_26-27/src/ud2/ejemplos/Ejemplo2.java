@@ -8,6 +8,7 @@ public class Ejemplo2 {
 		
 		try {
 			c=a/b;
+			
 		}catch (ArithmeticException e) {
 			System.out.println("No se puede dividir por cero");
 			System.out.println(e.getMessage());
