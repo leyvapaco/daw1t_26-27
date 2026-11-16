@@ -68,7 +68,20 @@ public class WrapperEjemplos {
         System.out.println("\nx == y: " + (x == y));
         System.out.println("z == t: " + (z == t)); //Sorprendente, ¿verdad?. 
         System.out.println("z.equals(t): " + z.equals(t)); //equals() no compara las referencias. Compara el valor almacenado
+        System.out.println("\nz.compareTo(t): " + z.compareTo(t)); 
         
+        /* Qué devuelve compareTo():
+         
+        	0 → si ambos objetos son iguales
+        	< 0 → si el objeto que llama es menor
+        	> 0 → si el objeto que llama es mayor
+        */
+        
+        z++;
+        System.out.println("z es mayor que t -> z.compareTo(t): " + z.compareTo(t)); 
+        
+        z=z-2;
+        System.out.println("t es mayor que z -> z.compareTo(t): " + z.compareTo(t)); 
         
         // 9. Conversión entre tipos
         Double decimal = 15.75;
