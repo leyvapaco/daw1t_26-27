@@ -37,8 +37,8 @@ public class PracticaWrappers2Sol {
         long maxLong =  Long.MAX_VALUE;
         long minLong =  Long.MIN_VALUE;
 
-        double maxByte = Byte.MAX_VALUE;
-        double minByte = Byte.MIN_VALUE;
+        byte maxByte = Byte.MAX_VALUE;
+        byte minByte = Byte.MIN_VALUE;
 
         // 5. Character
 
@@ -75,13 +75,16 @@ public class PracticaWrappers2Sol {
         // Comprueba si x es igual a z
         comprueba = x.equals(z);
 
+        int resultado;
+        
         // Comprueba si x es mayor que z
-        comprueba = x.compareTo(z) > 0;
+        resultado= x.compareTo(z);
 
         // Comprueba si x es menor que z
-        comprueba = x.compareTo(z) < 0;
+        resultado= z.compareTo(x);
 
         // Compara si x es igual a y
-        comprueba = x.compareTo(y) == 0;
+        resultado= x.compareTo(y);
+
     }
 }
