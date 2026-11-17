@@ -53,7 +53,7 @@ public class PracticaWrappers2 {
 		
 		comprueba =______________________;
 		
-		//Comprueba si la variable letra es un dígito
+        // Comprueba si la variable digito es un dígito
 		
 		comprueba =______________________;
 		
@@ -61,9 +61,6 @@ public class PracticaWrappers2 {
 		
 		comprueba =______________________;
 		
-		//Comprueba si la variable letra es un dígito
-		
-		comprueba =______________________;
 		
 		//Comprueba si la variable digito es es una letra o un dígito
 		
