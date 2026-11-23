@@ -1,8 +1,5 @@
 package ud3.ejemplos;
 
-/* Para entender las expresiones regulares: 
-https://4geeks.com/es/lesson/expresiones-regulares-java
-*/	
 
 public class ExpresionesRegulares {
 public static void main(String[] args) {
